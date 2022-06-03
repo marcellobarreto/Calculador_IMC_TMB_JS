@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Kcal Basal</title>
+    <link rel="stylesheet" href="calc.css" />
+  </head>
+  <body>
+    <header>
+    </header>
+    <section>
+      <div>
+        <p>
+          Sexo:
+          <input type="radio" name="radsex" id="mas" checked />
+          <label for="mas">Masculino</label>
+          <input type="radio" name="radsex" id="fem" />
+          <label for="fem">Feminino</label>
+        </p>
+      </div>
+      <div>
+        <p>
+          Idade:
+          <input type="number" name="txtidade" id="txtidade" min="1" max="99" />
+        </p>
+      </div>
+      <div>
+        <p>
+          Altura:
+          <input type="number" name="txtaltura" id="txtaltura" min="100" />
+          (cm)
+        </p>
+      </div>
+      <div>
+        <p>
+          Peso:
+          <input type="number" name="txtpeso" id="txtpeso" min="1" max="180" />
+        </p>
+      </div>
+      <div>
+        <p>
+          Frequência de Atividade Fisica:
+          <select id="atividade">
+            <option value="1.2">Nenhuma</option>
+            <option value="1.375">Muito Moderada</option>
+            <option value="1.55">Moderada</option>
+            <option value="1.725">Ativo</option>
+            <option value="1.9">Muito Ativo</option>
+          </select>
+        </p>
+        <p>
+      <input type="button" value="Calcular" onclick = calcular() />
+      </div>
+      <div id= "res">
+        Informe seus dados !
+      </div>
+    <div id= "amkcal">
+    </div>
+    <div id= "rekcal">
+    </div>
+      <div id= "rimcr">
+      </div>
+      <div id= "alerta">
+      </div>
+    </section>
+  </p>
+</div>
+    <footer>
+      <p>&copy; Calculadora Fit.</p>
+    </footer>
+    <script src="calc.js"></script>
+  </body>
+</html>
